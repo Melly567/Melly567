@@ -16,12 +16,6 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 2.5rem;
-}
-
-header p {
-    margin: 0;
-    font-size: 1.2rem;
 }
 
 main {
@@ -45,6 +39,7 @@ main {
 .project h2 {
     margin: 0;
     font-size: 1.5rem;
+    color: #6a5acd;
 }
 
 .project p {
