@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f0f7; /* Light lilac background */
+    color: #4b3860; /* Darker lilac text color */
+}
+
+header {
+    background-color: #c8bfe7; /* Lighter lilac header */
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: #4b3860;
+    text-decoration: none;
+}
+
+/* Add more CSS styles for other sections and elements as needed */
