@@ -1,24 +1,76 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f0f7; /* Light lilac background */
-    color: #4b3860; /* Darker lilac text color */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
 }
 
 header {
-    background-color: #c8bfe7; /* Lighter lilac header */
-    padding: 20px;
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
     text-align: center;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
 }
 
-nav a {
-    color: #4b3860;
+header p {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+main {
+    padding: 1rem;
+}
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.project {
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 5px;
+    width: calc(50% - 2rem);
+}
+
+.project h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.project p {
+    margin: 0.5rem 0;
+}
+
+.project a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #007bff;
     text-decoration: none;
 }
 
-/* Add more CSS styles for other sections and elements as needed */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+.social a {
+    color: #fff;
+    margin: 0 0.5rem;
+    text-decoration: none;
+}
