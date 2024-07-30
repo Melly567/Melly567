@@ -1,96 +1,80 @@
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: #f8f5f9; /* Light lilac background */
+    background-color: #f4f4f4;
 }
 
 header {
-    background: #6a5acd;
+    background: #333;
     color: #fff;
     padding: 1.5rem 0;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
     margin: 0;
     font-size: 2.5rem;
-    font-weight: 700;
 }
 
 header p {
-    margin: 0.5rem 0 0;
-    font-size: 1.4rem;
-    font-weight: 300;
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
 }
 
 main {
     padding: 2rem;
-    max-width: 1200px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
 #projects {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 1.5rem;
 }
 
 .project {
     background: #fff;
-    border: 1px solid #dcdcdc;
+    border: 1px solid #ddd;
     padding: 1.5rem;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-    width: calc(48% - 1rem);
-    transition: transform 0.3s;
-}
-
-.project:hover {
-    transform: translateY(-5px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .project h2 {
     margin: 0 0 1rem;
     font-size: 1.5rem;
-    color: #4c4c8a;
+    color: #333;
 }
 
 .project p {
-    margin: 0.5rem 0;
-    color: #555;
+    margin: 1rem 0;
 }
 
 .project a {
     display: inline-block;
-    margin-top: 1rem;
     padding: 0.5rem 1rem;
-    color: #4c4c8a;
+    color: #007bff;
     text-decoration: none;
-    border: 1px solid #4c4c8a;
+    border: 1px solid #007bff;
     border-radius: 4px;
     transition: background 0.3s, color 0.3s;
 }
 
 .project a:hover {
-    background: #4c4c8a;
+    background: #007bff;
     color: #fff;
 }
 
 footer {
-    background: #6a5acd;
+    background: #333;
     color: #fff;
     padding: 1rem 0;
     text-align: center;
     margin-top: 2rem;
-}
-
-footer p {
-    margin: 0.5rem 0;
 }
 
 .social a {
@@ -100,12 +84,8 @@ footer p {
     font-size: 1.2rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     #projects {
-        flex-direction: column;
-    }
-
-    .project {
-        width: 100%;
+        grid-template-columns: 1fr;
     }
 }
