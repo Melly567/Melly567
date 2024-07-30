@@ -1,63 +1,87 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: #f4f4f4;
+    background-color: #f3f0f5; /* Soft lilac background */
 }
 
 header {
-    background: #333;
+    background: #4c4c8a; /* Deep lilac header */
     color: #fff;
-    padding: 1rem 0;
+    padding: 1.5rem 0;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
     margin: 0;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+header p {
+    margin: 0.5rem 0 0;
+    font-size: 1.4rem;
+    font-weight: 300;
 }
 
 main {
-    padding: 1rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 #projects {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    justify-content: space-between;
+    gap: 1.5rem;
 }
 
 .project {
     background: #fff;
-    border: 1px solid #ccc;
-    padding: 1rem;
-    border-radius: 5px;
-    width: calc(50% - 2rem);
+    border: 1px solid #d3cce3; /* Light lilac border */
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    width: calc(48% - 1rem);
 }
 
 .project h2 {
     margin: 0;
-    font-size: 1.5rem;
-    color: #6a5acd;
+    font-size: 1.6rem;
+    color: #4c4c8a;
 }
 
 .project p {
-    margin: 0.5rem 0;
+    margin: 1rem 0;
+    color: #555;
 }
 
 .project a {
     display: inline-block;
-    margin-top: 0.5rem;
-    color: #007bff;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    color: #4c4c8a;
     text-decoration: none;
+    border: 1px solid #4c4c8a;
+    border-radius: 4px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.project a:hover {
+    background: #4c4c8a;
+    color: #fff;
 }
 
 footer {
-    background: #333;
+    background: #4c4c8a;
     color: #fff;
-    padding: 1rem;
+    padding: 1rem 0;
     text-align: center;
+    margin-top: 2rem;
 }
 
 footer p {
@@ -68,4 +92,15 @@ footer p {
     color: #fff;
     margin: 0 0.5rem;
     text-decoration: none;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    #projects {
+        flex-direction: column;
+    }
+
+    .project {
+        width: 100%;
+    }
 }
