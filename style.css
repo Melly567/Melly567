@@ -4,11 +4,11 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: #f3f0f5; /* Soft lilac background */
+    background-color: #f8f5f9; /* Light lilac background */
 }
 
 header {
-    background: #4c4c8a; /* Deep lilac header */
+    background: #6a5acd;
     color: #fff;
     padding: 1.5rem 0;
     text-align: center;
@@ -17,7 +17,7 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     font-weight: 700;
 }
 
@@ -42,21 +42,26 @@ main {
 
 .project {
     background: #fff;
-    border: 1px solid #d3cce3; /* Light lilac border */
+    border: 1px solid #dcdcdc;
     padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     width: calc(48% - 1rem);
+    transition: transform 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-5px);
 }
 
 .project h2 {
-    margin: 0;
-    font-size: 1.6rem;
+    margin: 0 0 1rem;
+    font-size: 1.5rem;
     color: #4c4c8a;
 }
 
 .project p {
-    margin: 1rem 0;
+    margin: 0.5rem 0;
     color: #555;
 }
 
@@ -68,7 +73,7 @@ main {
     text-decoration: none;
     border: 1px solid #4c4c8a;
     border-radius: 4px;
-    transition: background 0.3s ease, color 0.3s ease;
+    transition: background 0.3s, color 0.3s;
 }
 
 .project a:hover {
@@ -77,7 +82,7 @@ main {
 }
 
 footer {
-    background: #4c4c8a;
+    background: #6a5acd;
     color: #fff;
     padding: 1rem 0;
     text-align: center;
